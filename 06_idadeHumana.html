@@ -8,11 +8,16 @@
     // - cães grandes: fator 7.
 
     //Entrada
-
+    const idadeCao = parseInt(prompt("informe a idade do seu cao"))
+    const porteCao = prompt("informe o porte do seu cachorro (Grande - G / Medio - M / Pequeno - P)").toLocaleLowerCase()
+    let resultado
 
     //Processamento
-
+    (porteCao === "g") ? resultado = idadeCao * 7 
+    : (porteCao === "m") ? resultado = idadeCao * 6 
+    : resultado = idadeCao * 5 ;
     
     //Saída
+    document.write(`a idade do seu cachorro e ${resultado} anos`)
 
 </script>

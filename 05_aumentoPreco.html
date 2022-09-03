@@ -8,11 +8,17 @@
         //- acima de 1500: aumento de 5 %
     
     //Entrada
-
+    const precoProduto = Number(prompt("infrme  o valor do seu produto"))
+    let resultado
 
     //Processamento
+    (precoProduto <= 280) ? resultado = (precoProduto * 0.20) + precoProduto
+    : (precoProduto <= 700) ? resultado = (precoProduto * 0.15) + precoProduto
+    : (precoProduto <= 1500) ? resultado = (precoProduto * 0.10) + precoProduto
+    : resultado = (precoProduto * 0.05) + precoProduto ; 
 
     
     //Saída
+    document.write(`o novo valor do seu produto e ${resultado}`)
 
 </script>
